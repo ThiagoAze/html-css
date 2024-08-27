@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: black url("../imgs/fundo-madeira.jpg") top center / cover no-repeat fixed;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+}
+#celular{
+    position: absolute;
+    width: 311px;
+    height: 627px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../imgs/frame-iphone.png");
+    background-repeat: no-repeat;
+}
+#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 268px;
+    height: 471px;
+}
