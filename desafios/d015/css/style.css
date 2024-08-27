@@ -23,12 +23,13 @@ main{
     background-image: url("../imgs/frame-iphone.png");
     background-repeat: no-repeat;
 }
-#tela{
+iframe#tela{
     position: relative;
     top: 80px;
     left: 22px;
     width: 268px;
     height: 471px;
+    border-radius: 3px;
 }
 #redes-sociais{
     float: right;
@@ -45,5 +46,5 @@ main{
     border: 2px solid rgba(255, 255, 255, 0.750);
     transform: translate(-3px, -3px);
     box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.600);
-    transition: transform .4s, border .2s;
+    transition: transform .3s, border .1s;
 }
