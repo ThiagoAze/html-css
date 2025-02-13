@@ -20,6 +20,10 @@
         height: 100%;
         float: right;
     }
+
+    #formulario p{
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -34,12 +38,16 @@
     #img{
         height: 100%;
         width: 50%;
-        float: left;
+        float: right;
     }
 
     #formulario{
         width: 50%;
         height: 100%;
-        float: right;
+        float: left;
+    }
+
+    #formulario p{
+        font-size: 1.2em;
     }
 }
