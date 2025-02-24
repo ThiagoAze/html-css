@@ -69,9 +69,10 @@ form .campo{
 }
 
 form .campo input{
-    width: 80%;
+    width: calc(100% - 45px);
     height: 75%;
     padding: 5px;
+    border-radius: 5px;
 }
 
 form .campo label{
@@ -79,7 +80,10 @@ form .campo label{
 }
 
 form .campo i{
-    padding-right: 8px;
+    font-size: 2em;
+    color: #fff;
+    width: 35px;
+    text-align: center;
 }
 
 form button{
@@ -120,6 +124,6 @@ form a.entrar:hover{
 form a.entrar i {
     position: absolute;
     font-size: 1em;
-    top: 10px;
-    right: 30px;
+    padding-left: 5px;
+    padding-top: 5px;
 }
