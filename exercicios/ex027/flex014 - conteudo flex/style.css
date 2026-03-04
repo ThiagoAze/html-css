@@ -12,6 +12,11 @@ body{
 
 p, h1, h2{
     margin-bottom: 10px;
+}
+h2{
+    margin: 15px;
+}
+p{
     text-align: justify;
 }
 
@@ -21,4 +26,35 @@ header, section.normal, section.flex-content{
 
 section.flex-content{
     background-color: lightgray;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article.media-text, article.text-media{
+    display: flex;
+    justify-content: space-between;
+}
+article.media-text{
+    flex-flow: row wrap-reverse;
+}
+article.text-media{
+    flex-flow: row wrap;
+}
+article .text{
+    flex: 1 1 500px;
+}
+article .media{
+    flex: 1 0 400px;
+}
+
+.media img, .media iframe{
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+.media img{
+    width: 35vw;
+}
+.media iframe{
+    width: 90%;
 }
