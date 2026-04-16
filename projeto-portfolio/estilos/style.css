@@ -31,12 +31,15 @@ body {
 }
 
 header {
-  padding: 10px;
-  background-color: var(--destaque);
-  color: var(--texto);
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background-color: var(--destaque);
+  color: var(--texto);
+  z-index: 1;
 }
 
 #menu ul {
