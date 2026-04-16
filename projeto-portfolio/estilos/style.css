@@ -8,13 +8,13 @@
   --fundo-card
 */
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --fundo-principal: #f5f5f5;
   --texto: #222222;
   --texto-inverso: #ffffff;
@@ -23,14 +23,14 @@
   --fundo-card: #ffffff;
 }
 
-body{
+body {
   background-color: var(--fundo-principal);
   color: var(--texto);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
 }
 
-header{
+header {
   padding: 10px;
   background-color: var(--destaque);
   color: var(--texto);
@@ -39,38 +39,38 @@ header{
   align-content: center;
 }
 
-#menu ul{
+#menu ul {
   list-style: none;
   display: flex;
   gap: 10px;
 }
-#menu a{
+#menu a {
   text-decoration: none;
   color: var(--texto-inverso);
   font-weight: bold;
   padding: 12px 15px;
   border-radius: 5px;
-  transition: .2s;
+  transition: 0.2s;
 }
-#menu a:hover{
+#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
 }
 
-main{
+main {
   display: grid;
   grid-template-columns: 1fr 90vw 1fr;
   gap: 20px;
   margin-top: 20px;
 }
 
-section#ficha{
+section#ficha {
   grid-column: 2;
   background-color: var(--fundo-card);
   padding: 20px;
   border-radius: 8px;
 }
-section#ficha img.foto{
+section#ficha img.foto {
   display: block;
   margin: auto;
   width: 200px;
@@ -82,13 +82,13 @@ section#ficha img.foto{
   overflow: hidden;
   margin-bottom: 15px;
 }
-section#ficha h1{
+section#ficha h1 {
   color: var(--destaque);
   margin: 15px 0;
   text-align: center;
   font-size: 1.5em;
 }
-#social{
+#social {
   display: flex;
   font-size: 1.6em;
   justify-content: center;
@@ -96,100 +96,156 @@ section#ficha h1{
   gap: 1em;
   margin: 15px;
 }
-#social a{
+#social a {
   color: var(--destaque);
 }
-#social a:hover{
+#social a:hover {
   color: var(--destaque-inverso);
 }
 
-section#detalhes{
+section#detalhes {
   grid-column: 2;
 }
-article{
+article {
   background-color: var(--fundo-card);
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
 }
-article h2{
+article h2 {
   color: var(--destaque);
   margin-bottom: 1em;
 }
-.video-container{
+.video-container {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: contain;
   overflow: hidden;
   position: relative;
 }
-.video-container iframe{
+.video-container iframe {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 6px;
 }
 
-#skill-container{
+#skill-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
 }
-#skill-container .info{
+#skill-container .info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#skill-container .nome{
+#skill-container .nome {
   font-weight: bold;
   color: var(--texto);
 }
-#skill-container .porcent{
+#skill-container .porcent {
   color: var(--destaque);
   font-weight: bold;
 }
-#skill-container .barra{
+#skill-container .barra {
   width: 100%;
   height: 10px;
   background-color: var(--fundo-principal);
   border-radius: 4px;
 }
-#skill-container .progresso{
+#skill-container .progresso {
   height: 100%;
   background-color: var(--destaque-inverso);
   border-radius: 4px;
 }
 
-#formacao-container{
+#formacao-container {
   display: flex;
   flex-direction: column-reverse;
   gap: 20px;
 }
-#formacao-container .curso{
+#formacao-container .curso {
   background-color: var(--fundo-principal);
   border-radius: 6px;
   border-left: 5px solid var(--destaque-inverso);
   padding-left: 15px;
-  transition: .5s;
+  transition: 0.5s;
 }
-#formacao-container .curso:hover{
+#formacao-container .curso:hover,
+#projeto-container .projeto:hover {
   border-color: var(--destaque);
   border-left-width: 15px;
   cursor: pointer;
 }
-#formacao-container .periodo{
-  font-size: .8em;
+#formacao-container .periodo {
+  font-size: 0.8em;
   font-weight: bold;
   color: var(--texto);
 }
-#formacao-container .instituicao{
+#formacao-container .instituicao {
   font-size: 1.1em;
   color: var(--destaque-inverso);
 }
 
+#projeto-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+#projeto-container .projeto {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--fundo-principal);
+  border-radius: 6px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: 0.5s;
+}
+#projeto-container .foto {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 6px;
+  transition: 0.5s;
+}
 
-@media screen and (min-width: 768px){
-  #skill-container{
+footer {
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 15px;
+}
+footer a {
+  color: var(--texto-inverso);
+  text-decoration: none;
+  font-weight: bold;
+}
+footer a:hover {
+  color: var(--destaque-inverso);
+}
+
+@media screen and (min-width: 768px) {
+  #skill-container {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #projeto-container .projeto {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  #projeto-container .foto {
+    aspect-ratio: 1/1;
+    max-width: 30%;
+    max-height: 200px;
+  }
+  #projeto-container .foto:hover {
+    object-fit: contain;
+    max-width: 50%;
+  }
+  #projeto-container .projeto-info {
+    max-width: 80%;
   }
 }
